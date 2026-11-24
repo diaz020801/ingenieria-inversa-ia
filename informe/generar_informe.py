@@ -119,7 +119,7 @@ cen("TRABAJO:", 5)
 cen("“<i>Ingeniería Inversa Funcional y Reconstrucción Asistida por Inteligencia Artificial<br/>"
     "de Cuatro Programas de Escritorio</i>”", 9)
 cen("ASIGNATURA:", 2)
-cen("Inteligencia Artificial. Práctica N.º 13", 9)
+cen("Inteligencia Artificial. Práctica N.º 7", 9)
 cen("AUTOR:", 2)
 cen("DIAZ ANCCO, Jorge Antonio.<br/>Código: 22221038", 9)
 cen("DOCENTE:", 2)
