@@ -80,7 +80,7 @@ f.fore_color.rgb = V
 texto(s, 1, .8, 11.3, .6, "UNIVERSIDAD NACIONAL AMAZÓNICA DE MADRE DE DIOS", 20, True, G, PP_ALIGN.CENTER)
 texto(s, 1, 2.2, 11.3, 1.8, "Ingeniería inversa de cuatro programas y reconstrucción con IA", 42, True, B, PP_ALIGN.CENTER)
 texto(s, 1, 4.1, 11.3, .6, "OpenOffice Writer · Microsoft Paint · SumatraPDF · IrfanView", 22, col=G, al=PP_ALIGN.CENTER)
-texto(s, 1, 5.4, 11.3, 1.4, ["Jorge Antonio Diaz Ancco (22221038)", "Docente: Miguel Angel Alatrista Aguilar", "Inteligencia Artificial, noviembre de 2026"], 18, col=B, al=PP_ALIGN.CENTER)
+texto(s, 1, 5.4, 11.3, 1.4, ["Jorge Antonio Diaz Ancco (22221038)", "Docente: Miguel Ángel Alatrista Aguilar", "Inteligencia Artificial, noviembre de 2026"], 18, col=B, al=PP_ALIGN.CENTER)
 s.notes_slide.notes_text_frame.text = "Saludo y presentación (30 s). Estudié cuatro programas por observación, sin descompilar, y reconstruí cada uno en Python con IA local."
 
 s = lam("Cuatro programas: dos open source y dos propietarios", "Un programa por cada categoría de la guía. Dos son de código abierto y dos de licencia propietaria, como pide el enunciado.")

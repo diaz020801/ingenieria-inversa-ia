@@ -105,25 +105,26 @@ def pie(c, d):
 
 
 # ------------------------------------------------------------------ 1. carátula
-def cen(t, tam, negrita=True, despues=8, color=colors.black):
-    S.append(Paragraph(t, PS("x", fontName="TB" if negrita else "T", fontSize=tam, leading=tam * 1.3,
-                             alignment=TA_CENTER, spaceAfter=despues, textColor=color)))
+def cen(t, despues=15, fuente="T"):
+    S.append(Paragraph(t, PS("car", fontName=fuente, fontSize=12, leading=20, alignment=TA_CENTER, spaceAfter=despues)))
 
 
-S.append(Spacer(1, 1.2 * cm))
-cen("UNIVERSIDAD NACIONAL AMAZÓNICA DE MADRE DE DIOS", 16, color=V)
-cen("Facultad de Ingeniería", 13, False)
-cen("Escuela Profesional de Ingeniería de Sistemas e Informática", 13, False, 70)
-cen("INFORME TÉCNICO DE LABORATORIO", 13, True, 18)
-cen("Ingeniería Inversa Funcional y Reconstrucción Asistida por Inteligencia Artificial de Cuatro Programas de Escritorio",
-    20, True, 16, V)
-cen("OpenOffice Writer, Microsoft Paint, SumatraPDF e IrfanView", 13, False, 70)
-for a, b in (("Asignatura", "Inteligencia Artificial"), ("Práctica N.º", "[completar]"),
-             ("Docente", "ALATRISTA AGUILAR, Miguel Angel"), ("Estudiante", "DIAZ ANCCO, Jorge Antonio"),
-             ("Código", "22221038"), ("Fecha", "24 de noviembre de 2026"), ("Repositorio", REPO)):
-    cen(f"<b>{a}:</b> {b}", 12, False, 5)
 S.append(Spacer(1, 1.6 * cm))
-cen("Puerto Maldonado, Perú, 2026", 12, False)
+cen("“UNIVERSIDAD NACIONAL AMAZÓNICA DE MADRE DE DIOS”", 9, "TB")
+cen("FACULTAD DE INGENIERÍA", 9)
+cen("ESCUELA PROFESIONAL DE INGENIERÍA DE SISTEMAS E<br/>INFORMÁTICA", 6)
+S.append(img(F / "escudo_unamad.png", 7.4 * cm, 7.4 * cm))
+S.append(Spacer(1, 16))
+cen("TRABAJO:", 5)
+cen("“<i>Ingeniería Inversa Funcional y Reconstrucción Asistida por Inteligencia Artificial<br/>"
+    "de Cuatro Programas de Escritorio</i>”", 9)
+cen("ASIGNATURA:", 2)
+cen("Inteligencia Artificial. Práctica N.º 13", 9)
+cen("AUTOR:", 2)
+cen("DIAZ ANCCO, Jorge Antonio.<br/>Código: 22221038", 9)
+cen("DOCENTE:", 2)
+cen("ALATRISTA AGUILAR, Miguel Ángel.", 40)
+cen("Puerto Maldonado, 2026", 0)
 S += [NextPageTemplate("n"), PageBreak()]
 p("Contenido", PS("toc", fontName="TB", fontSize=15, leading=20, textColor=V))
 toc = TableOfContents()
@@ -148,6 +149,7 @@ tabla("Programas seleccionados", [
 p("<b>Alcance.</b> Las réplicas cubren las funciones esenciales de las Tablas 3 a 6, no la totalidad de cada programa. No se "
   "descompiló ningún binario ni se copiaron íconos, textos de ayuda o código: solo se observó comportamiento, interfaz, "
   "archivos producidos y accesos a disco, como exige la nota de ética de la guía.")
+p(f"<b>Repositorio del proyecto:</b> <link href='{REPO}' color='#065f46'>{REPO}</link>")
 p("<b>Entorno.</b> Windows 11, Intel Core i7-13650HX, 16 GB de RAM, NVIDIA RTX 5060 Laptop (8 GB), Python 3.12, PyQt6, "
   "Ollama 0.40 y ONNX Runtime.")
 

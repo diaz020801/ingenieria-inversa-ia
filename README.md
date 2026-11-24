@@ -1,7 +1,7 @@
 # Ingeniería inversa de cuatro programas y réplicas con IA local
 
 Práctica de Inteligencia Artificial, UNAMAD. Estudiante: Jorge Antonio Diaz Ancco (22221038).
-Docente: Miguel Angel Alatrista Aguilar.
+Docente: Miguel Ángel Alatrista Aguilar.
 
 | Op. | Original | Réplica | IA local |
 |---|---|---|---|
